@@ -1,0 +1,227 @@
+.part {
+    padding: 5%;
+}
+
+.part.black {
+    background: #000;
+}
+
+.part.white {
+    background: #fff;
+}
+
+.part .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.part .box iframe {
+    width: 80%;
+}
+
+.part .box .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part .box .min-height {
+    height: 60vw;
+}
+
+.part .box .left video {
+    width: 40vw;
+}
+
+.part .box .left .images-relative-box {
+    position: relative;
+    width: 80%;
+    height: 70%;
+}
+
+.part .box .left .images-relative-box .passe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17vw;
+}
+
+.part .box .left .images-relative-box .modern {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 17vw;
+}
+
+.part .box .left .images-relative-box .modern:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.part .box .left .images-relative-box .actuel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 17vw;
+}
+
+.part .box .left .images-relative-box .nhl-logo {
+    width: 17vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.part .box .left .images-relative-box .roller {
+    width: 17vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.part .box .left .images-relative-box .roller:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.part .box .left .images-relative-box .nhl-logos {
+    width: 17vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.part .box .right {
+    width: 50%;
+}
+
+.part#discover .box .right h3 {
+    font-size: 4vw;
+}
+
+.part.black .box .right h3,
+.part.black .box .right h4 {
+    color: #fff;
+}
+
+.part.white .box .right h3,
+.part.white .box .right h4 {
+    color: #000;
+}
+
+.part.black .box .right p {
+    color: #fff;
+    font-size: 1.1vw;
+    line-height: 2vw;
+}
+
+.part.white .box .right p {
+    color: #000;
+    font-size: 1.1vw;
+    line-height: 2vw;
+}
+
+.part .box .right .btn-box {
+    position: relative;
+    margin-top: 20px;
+}
+
+.part .box .right .btn-box a.btn {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: transparent;
+    width: -moz-max-content;
+    width: fit-content;
+    cursor: pointer;
+    transition: 500ms;
+    z-index: 1000;
+}
+
+.part.black .box .right a {
+    color: #fff;
+}
+
+.part.white .box .right a {
+    color: #000;
+}
+
+.part.black .box .right .btn-box a.btn {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.part.white .box .right .btn-box a.btn {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.part.black .box .right .btn-box a.btn:hover {
+    color: #000;
+}
+
+.part.white .box .right .btn-box a.btn:hover {
+    color: #fff;
+}
+
+.part .box .right .btn-box a.btn::before {
+    content: "";
+    position: absolute;
+    transform-origin: bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transition: 500ms;
+    z-index: -1;
+}
+
+.part.black .box .right .btn-box a.btn::before {
+    background: #fff;
+}
+
+.part.white .box .right .btn-box a.btn::before {
+    background: #000;
+}
+
+.part .box .right .btn-box a.btn:hover::before {
+    transform: scaleY(1);
+}
+
+.part .box .column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.part.black .box .column h3 {
+    color: #fff;
+    font-size: 4vw;
+}
+
+.part.white .box .column h3 {
+    color: #000;
+    font-size: 4vw;
+}
+
+.part .box .column video {
+    width: 80%;
+}
+
+.part.black p {
+    color: #fff;
+    font-size: 1.1vw;
+    line-height: 2vw;
+}
+
+.part.white p {
+    color: #000;
+    font-size: 1.1vw;
+    line-height: 2vw;
+}

@@ -1,0 +1,72 @@
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 100000;
+    transform: translateX(100%);
+    transition: 800ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .cross-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(7px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.menu .cross-btn:hover {
+    transform: rotate(180deg);
+}
+
+.menu .list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.menu .list a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 5px 7px;
+    margin: 10px 0;
+    transition: 800ms;
+}
+
+.menu .list a:hover {
+    color: #fff;
+}
+
+.menu .list a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom;
+    width: 100%;
+    height: 3px;
+    background: #000;
+    transition: 500ms;
+    z-index: -1;
+}
+
+.menu a:hover::before {
+    height: 100%;
+}

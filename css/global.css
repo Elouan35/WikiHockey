@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+::selection {
+    background: #cfceae;
+    color: #000;
+}
+
+h1 {
+    font-family: Bebas-Neue;
+    letter-spacing: 1.5px;
+}
+
+h2,
+h3,
+h4 {
+    font-family: Abril-Fatface;
+}
+
+h3 {
+    font-size: 5vw;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+a,
+p {
+    font-family: Raleway;
+}
+
+span {
+    font-weight: bolder;
+}
+
+img {
+    transition: transform 500ms;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+p#len a {
+    text-decoration: underline !important;
+    font-weight: bolder;
+}
+
+.introduction {
+    font-family: Bebas-Neue;
+    font-size: 5vw;
+    letter-spacing: 1.5px;
+}
+
+.select-disable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.by {
+    position: relative;
+}
+
+.by p#by {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

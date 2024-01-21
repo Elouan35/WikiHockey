@@ -1,0 +1,51 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(7px);
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+nav .burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(7px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+nav .burger-menu:hover {
+    transform: rotate(-90deg);
+}
